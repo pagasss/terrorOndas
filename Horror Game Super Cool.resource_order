@@ -15,9 +15,9 @@
     {"name":"Shaders","order":6,"path":"folders/Shaders.yy",},
     {"name":"Sons","order":3,"path":"folders/Sons.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
-    {"name":"Protagonista","order":3,"path":"folders/Sprites/Protagonista.yy",},
     {"name":"Inimigos","order":2,"path":"folders/Sprites/Inimigos.yy",},
     {"name":"Itens","order":1,"path":"folders/Sprites/Itens.yy",},
+    {"name":"Protagonista","order":3,"path":"folders/Sprites/Protagonista.yy",},
   ],
   "ResourceOrderSettings":[],
 }
