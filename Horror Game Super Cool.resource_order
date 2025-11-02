@@ -19,5 +19,9 @@
     {"name":"Itens","order":1,"path":"folders/Sprites/Itens.yy",},
     {"name":"Protagonista","order":3,"path":"folders/Sprites/Protagonista.yy",},
   ],
-  "ResourceOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"ControlaLuz","order":1,"path":"objects/ControlaLuz/ControlaLuz.yy",},
+    {"name":"oLuz","order":2,"path":"objects/oLuz/oLuz.yy",},
+    {"name":"sLuz","order":5,"path":"sprites/sLuz/sLuz.yy",},
+  ],
 }

@@ -1,49 +1,44 @@
-var direita, esquerda, cima, baixo;
-var correr;
+
+//iniciar variáveis
 
 //controles
-direita = keyboard_check(ord("D"));
-esquerda = keyboard_check(ord("A"));
-cima = keyboard_check(ord("W"));
-baixo = keyboard_check(ord("S"));
-correr = keyboard_check_pressed(vk_shift);
+direita		= noone;
+esquerda	= noone;
+cima		= noone;
+baixo		= noone;
+
 //velocidade
-var vel =  1;
+vel		= 2;
+velh	= 0;
+velv	= 0;
+dir		= 1;
+estado	= 0;
 
-//movimentação 
+//Método para movimentação
 
-if(direita)
-	{
-		x+=vel
-	}
-	else if(esquerda){
-		x-=vel
-	}
-	else if(cima){
-		y-=vel
-	}
-	else if(baixo){
-		y+=vel
-	}
-	else{
-	vel = 0;
-	}
+	direita	 = keyboard_check(ord("D"));
+	esquerda = keyboard_check(ord("A"));
+	cima	 = keyboard_check(ord("W"));
+	baixo	 = keyboard_check(ord("S"));
+	correr	 = keyboard_check_pressed(vk_shift);
 	
+	if(direita xor esquerda or cima xor baixo)
+	{
+		var _dir = point_direction(0, 0, direita - esquerda, baixo - cima);
+		
+		look_dir = _dir
+		//aplicando a velocidade horizontal
+		velh = lengthdir_x(vel, _dir);
 	
-/*
-switch (estado){
-	case"parado":
-	{
-		//sprite dele parado
+		//aplicando a velocidade vertical
+		velv = lengthdir_y(vel, _dir);
 	}
-	case"andando":
+	else //se não está apertando tecla
 	{
-			if (direita or esquerda or cima or baixo){
-				//muda o sprite
-				
-			} 
+		velh = 0;
+		velv = 0;
 	}
-}
+
 
 
 	
