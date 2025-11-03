@@ -6,6 +6,7 @@ direita		= noone;
 esquerda	= noone;
 cima		= noone;
 baixo		= noone;
+var dt = delta_time / 10000
 
 //velocidade
 
@@ -48,6 +49,54 @@ estado	= 0;
 		velv = 0;
 	}
 
+#region
+// Faz o BPM se aproximar do bpm_target aos poucos (suavização)
+global.bpm += (bpm_target - global.bpm) * bpm_change_rate * delta_time / 1000000
 
+// Ajusta a velocidade de movimento conforme o BPM
+if (esta_correndo) bpm_target += 0.05 * dt;
+
+// Decaimento natural do BPM com o tempo
+if (bpm_target > 80) bpm_target -= 0.01 * dt; 
+else if (bpm_target < 80) bpm_target += 0.01 * dt;
+
+// Limita o BPM entre o mínimo e o máximo
+global.bpm = clamp(global.bpm, bpm_min, bpm_max);
+
+// Efeitos de BPM extremos
+if (global.bpm >= bpm_max) {
+    show_debug_message("INFARTO! Game Over!");
+    instance_destroy(); // ou trigger de morte
+}
+
+if (global.bpm <= bpm_min) {
+    show_debug_message("Desmaio! Visão turva...");
+    // Aqui pode ativar um efeito de tela
+}
+#endregion
+
+/// --- Pegar item com E ---
+if (keyboard_check_pressed(ord("E"))) {
+    var item = instance_nearest(x, y, obj_item);
+    if (item != noone && point_distance(x, y, item.x, item.y) < pickup_range) {
+        if (ds_list_size(inventory) < max_inventory) {
+            ds_list_add(inventory, item.item_type);
+            show_debug_message("Pegou: " + string(item.item_type));
+            instance_destroy(item);
+        } else {
+            show_debug_message("Inventário cheio!");
+        }
+    }
+}
+
+/// --- Usar item (exemplo: teclas 1 a 5) ---
+for (var i = 0; i < ds_list_size(inventory); i++) {
+    if (keyboard_check_pressed(ord("B"))) {
+        var item_type = inventory[| i];
+        scr_use_item(item_type);
+        ds_list_delete(inventory, i); // remove item após uso
+        break;
+    }
+}
 
 	
