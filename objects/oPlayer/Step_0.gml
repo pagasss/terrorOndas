@@ -47,6 +47,28 @@ estado	= 0;
 		velh = 0;
 		velv = 0;
 	}
+	
+	//liga desliga lanterna
+	
+	if keyboard_check_pressed(ord("F"))
+	{
+		if (bateria_atual > 0){
+			//inverte o valor(liga e desliga)
+			lanterna_ativa = !lanterna_ativa;
+		} else 
+		{
+			lanterna_ativa = false;
+		}
+
+	}
+	if (lanterna_ativa) {
+		bateria_atual -= taxa_consumo; //reduz a bateria
+		
+			if (bateria_atual <= 0){
+				bateria_atual = 0;
+				lanterna_ativa = false;
+			}
+	}
 
 
 
