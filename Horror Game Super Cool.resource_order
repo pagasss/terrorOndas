@@ -22,8 +22,13 @@
   ],
   "ResourceOrderSettings":[
     {"name":"ControlaLuz","order":1,"path":"objects/ControlaLuz/ControlaLuz.yy",},
+    {"name":"hud_bpm","order":3,"path":"objects/hud_bpm/hud_bpm.yy",},
+    {"name":"obj_item","order":4,"path":"objects/obj_item/obj_item.yy",},
     {"name":"oLuz","order":2,"path":"objects/oLuz/oLuz.yy",},
     {"name":"oPilha","order":3,"path":"objects/oPilha/oPilha.yy",},
     {"name":"sLuz","order":5,"path":"sprites/sLuz/sLuz.yy",},
+    {"name":"spr_item_cafe","order":1,"path":"sprites/spr_item_cafe/spr_item_cafe.yy",},
+    {"name":"spr_item_chiclete","order":3,"path":"sprites/spr_item_chiclete/spr_item_chiclete.yy",},
+    {"name":"spr_item_cigarro","order":2,"path":"sprites/spr_item_cigarro/spr_item_cigarro.yy",},
   ],
 }
