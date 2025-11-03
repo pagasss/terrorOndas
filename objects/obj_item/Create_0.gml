@@ -23,5 +23,6 @@ switch (item_type) {
     default:
         sprite_index = spr_item; // sprite genérico
         break;
+	
 }
 

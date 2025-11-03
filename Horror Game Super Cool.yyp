@@ -2,7 +2,7 @@
   "$GMProject":"v1",
   "%Name":"Horror Game Super Cool",
   "AudioGroups":[
-    {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
   "configs":{
     "children":[],
@@ -35,14 +35,15 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.1.193",
+    "IDEVersion":"2024.14.0.207",
   },
   "name":"Horror Game Super Cool",
   "resources":[
     {"id":{"name":"ControlaLuz","path":"objects/ControlaLuz/ControlaLuz.yy",},},
-    {"id":{"name":"hud_bpm","path":"objects/hud_bpm/hud_bpm.yy",},},
+    {"id":{"name":"hud","path":"objects/hud/hud.yy",},},
     {"id":{"name":"obj_item","path":"objects/obj_item/obj_item.yy",},},
     {"id":{"name":"oLuz","path":"objects/oLuz/oLuz.yy",},},
+    {"id":{"name":"oPai","path":"objects/oPai/oPai.yy",},},
     {"id":{"name":"oPilha","path":"objects/oPilha/oPilha.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
