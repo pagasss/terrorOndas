@@ -9,7 +9,7 @@ esta_correndo = false;
 lanterna_ativa	= false;
 bateria_atual	= 100;
 max_bateria		= 100;
-taxa_consumo	= 0.05;
+taxa_consumo	= 0.005;
 
 global.bpm = 130;                // BPM inicial normal
 bpm_min = 40;            // Limite inferior (muito baixo)

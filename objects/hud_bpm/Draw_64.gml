@@ -1,1 +1,1 @@
-draw_text(50, 70, "BPM: " + string_format(global.bpm, 3, 0));
+draw_text(50, 100, "BPM: " + string_format(global.bpm, 3, 0));
