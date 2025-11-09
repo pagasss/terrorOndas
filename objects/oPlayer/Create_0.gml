@@ -5,14 +5,6 @@ vel_correndo = 3.5;
 esta_correndo = false;
 
 
-
-//lanterna
-lanterna_ativa	= false;
-bateria_atual	= 100;
-max_bateria		= 100;
-taxa_consumo	= 0.005;
-
-
 global.bpm = 130;                // BPM inicial normal
 bpm_min = 40;            // Limite inferior (muito baixo)
 bpm_max = 200;           // Limite superior (infarto)

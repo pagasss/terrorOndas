@@ -53,21 +53,21 @@ estado	= 0;
 	
 	if keyboard_check_pressed(ord("F"))
 	{
-		if (bateria_atual > 0){
+		if (oLanterna.bateria_atual > 0){
 			//inverte o valor(liga e desliga)
-			lanterna_ativa = !lanterna_ativa;
+			oLanterna.lanterna_ativa = !oLanterna.lanterna_ativa;
 		} else 
 		{
-			lanterna_ativa = false;
+			oLanterna.lanterna_ativa = false;
 		}
 
 	}
-	if (lanterna_ativa) {
-		bateria_atual -= taxa_consumo; //reduz a bateria
+	if (oLanterna.lanterna_ativa) {
+		oLanterna.bateria_atual -= oLanterna.taxa_consumo; //reduz a bateria
 		
-			if (bateria_atual <= 0){
-				bateria_atual = 0;
-				lanterna_ativa = false;
+			if (oLanterna.bateria_atual <= 0){
+				oLanterna.bateria_atual = 0;
+				oLanterna.lanterna_ativa = false;
 			}
 	}
 
