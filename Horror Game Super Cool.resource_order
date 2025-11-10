@@ -17,6 +17,8 @@
     {"name":"Shaders","order":6,"path":"folders/Shaders.yy",},
     {"name":"Sons","order":3,"path":"folders/Sons.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
+    {"name":"Cenário","order":5,"path":"folders/Sprites/Cenário.yy",},
+    {"name":"chão","order":1,"path":"folders/Sprites/Cenário/chão.yy",},
     {"name":"Inimigos","order":1,"path":"folders/Sprites/Inimigos.yy",},
     {"name":"Recursos","order":1,"path":"folders/Sprites/Itens/Recursos.yy",},
     {"name":"Monstros","order":4,"path":"folders/Sprites/Monstros.yy",},
