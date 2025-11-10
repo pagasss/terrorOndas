@@ -88,16 +88,14 @@ global.bpm = clamp(global.bpm, bpm_min, bpm_max);
 // Efeitos de BPM extremos
 if (global.bpm >= bpm_max) {
     show_debug_message("INFARTO! Game Over!");
-    instance_destroy(); // ou trigger de morte
+    instance_destroy(); 
 }
 
 if (global.bpm <= bpm_min) {
     show_debug_message("Desmaio! Visão turva...");
-    // Aqui pode ativar um efeito de tela
 }
 #endregion
 
-/// --- Pegar item com E ---
 if (keyboard_check_pressed(ord("E"))) {
     var item = instance_nearest(x, y, obj_item);
     if (item != noone && point_distance(x, y, item.x, item.y) < pickup_range) {
@@ -111,9 +109,9 @@ if (keyboard_check_pressed(ord("E"))) {
     }
 }
 
-/// --- Usar item (exemplo: teclas 1 a 5) ---
 for (var i = 0; i < ds_list_size(inventory); i++) {
-    if (keyboard_check_pressed(ord("B"))) {
+	var key = ord("1") + i
+    if (keyboard_check_pressed(key)) {
         var item_type = inventory[| i];
         scr_use_item(item_type);
         ds_list_delete(inventory, i); // remove item após uso

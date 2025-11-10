@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"v2",
+  "$GMSprite":"",
   "%Name":"spr_item_cafe",
   "bboxMode":2,
   "bbox_bottom":19,
