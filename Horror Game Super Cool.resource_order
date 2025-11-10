@@ -25,6 +25,7 @@
   "ResourceOrderSettings":[
     {"name":"hud","order":3,"path":"objects/hud/hud.yy",},
     {"name":"obj_item","order":4,"path":"objects/obj_item/obj_item.yy",},
+    {"name":"oInventario","order":8,"path":"objects/oInventario/oInventario.yy",},
     {"name":"oLanterna","order":1,"path":"objects/oLanterna/oLanterna.yy",},
     {"name":"oManequim","order":1,"path":"objects/oManequim/oManequim.yy",},
     {"name":"oPai","order":5,"path":"objects/oPai/oPai.yy",},
